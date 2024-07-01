@@ -1,7 +1,6 @@
 const {Sequelize,DataTypes}=require('sequelize')
 const sequelize=require("../utlis/Database")
-const Company=require('./companyModel')
-const Department=require('./departmentModel')
+
 const Staffs=sequelize.define("Staffs",{
     id:{
         type:DataTypes.INTEGER,
