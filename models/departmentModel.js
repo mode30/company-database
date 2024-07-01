@@ -1,7 +1,6 @@
 // models/departmentModel.js
 const { Sequelize, DataTypes } = require('sequelize'); // Import Sequelize and DataTypes
 const sequelize = require('../utlis/Database'); // Import the Sequelize instance
-const Company=require('../models/companyModel')
 const Department = sequelize.define('Department', {
     id: {
         type: DataTypes.INTEGER, // Use DataTypes.INTEGER
