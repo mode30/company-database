@@ -3,13 +3,13 @@ const { Sequelize, DataTypes } = require('sequelize'); // Import Sequelize and D
 const sequelize = require('../utlis/Database'); // Import the Sequelize instance
 const Department = sequelize.define('Department', {
     id: {
-        type: DataTypes.INTEGER, // Use DataTypes.INTEGER
+        type: DataTypes.INTEGER, 
         allowNull: false,
-        autoIncrement: true, // Correct spelling
+        autoIncrement: true, 
         primaryKey: true
     },
-    department_name: { // Corrected the typo in the field name
-        type: DataTypes.STRING, // Use DataTypes.STRING
+    department_name: { 
+        type: DataTypes.STRING, 
         allowNull: false,
         unique: true
     },
